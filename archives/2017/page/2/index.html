@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>WHL Blog -王海龙的个人博客</title>
+  <title>Archives: 2017 | WHL Blog -王海龙的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="郑州大学15级计算机系本科生">
 <meta property="og:type" content="website">
 <meta property="og:title" content="WHL Blog -王海龙的个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2017/page/2/index.html">
 <meta property="og:site_name" content="WHL Blog -王海龙的个人博客">
 <meta property="og:description" content="郑州大学15级计算机系本科生">
 <meta property="og:locale" content="zh-CN">
@@ -159,817 +159,76 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-[LeetCode]136. Single Number(找出数组中单独出现的数)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/08/13/[LeetCode]461. Hamming Distance(汉明距离)/" class="archive-article-date">
+  	<time datetime="2017-08-13T15:52:17.926Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/[LeetCode]136. Single Number(找出数组中单独出现的数)/">LeetCode 136. Single Number</a>
+      <a class="archive-article-title" href="/2017/08/13/[LeetCode]461. Hamming Distance(汉明距离)/">LeetCode 461. Hamming Distance</a>
     </h1>
   
 
-        
-        <a href="/2017/08/14/[LeetCode]136. Single Number(找出数组中单独出现的数)/" class="archive-article-date">
-  	<time datetime="2017-08-13T16:19:23.189Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Given an array of integers, every element appears twice except for one. Find that single one.<br>题目大意:给定一个整数数组，每个元素出现两次，只要一个元素出现一次。 找到这个元素。<br>Note:<br>Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?<br>您的算法应具有线性运行时复杂性。 你能实现它，而不使用额外的内存？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">C++</div><div class="line"></div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    int singleNumber(vector&lt;int&gt;&amp; nums) &#123;</div><div class="line">        int length = nums.size();</div><div class="line">        if(length == 1)</div><div class="line">            return nums[0];</div><div class="line">        int a = 0;</div><div class="line">        for(int i=0;i&lt;length;i++)&#123;</div><div class="line">            a ^= nums[i];//利用异或性质 对于任何数x，都有x^x=0 ，x^0=x ，a^b=b^a 所以 x^y^x = y</div><div class="line">        &#125;</div><div class="line">        return a;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>注意：</p>
-<ul>
-<li>异或性质</li>
-<li>1、交换律 (a^b  = b^a)</li>
-<li>2、结合律（即(a^b)^c = a^(b^c)）</li>
-<li>3、对于任何数x，都有x^x=0，x^0=x  所以 x^y^x = y</li>
-<li>自己着实没想出来好办法，只好百度了一下，异或很重要…</li>
-</ul>
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/[LeetCode]136. Single Number(找出数组中单独出现的数)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-[LeetCode]520. Detect Capital(检测单词是否合法)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
     
-      <header class="article-header">
-        
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/08/13/hello-world/" class="archive-article-date">
+  	<time datetime="2017-08-13T02:30:36.265Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/[LeetCode]520. Detect Capital(检测单词是否合法)/">LeetCode 520. Detect Capital</a>
+      <a class="archive-article-title" href="/2017/08/13/hello-world/">Hello World</a>
     </h1>
   
 
-        
-        <a href="/2017/08/14/[LeetCode]520. Detect Capital(检测单词是否合法)/" class="archive-article-date">
-  	<time datetime="2017-08-13T16:19:13.565Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Given a word, you need to judge whether the usage of capitals in it is right or not.<br>We define the usage of capitals in a word to be right when one of the following cases holds:</p>
-<ul>
-<li>All letters in this word are capitals, like “USA”.   </li>
-<li>All letters in this word are not capitals, like “leetcode”.</li>
-<li>Only the first letter in this word is capital if it has more than one letter, like “Google”.<br>Otherwise, we define that this word doesn’t use capitals in a right way.<br>题目大意：判断单词是否合法，合法有三种，要么全部大写，要么全部小写，要么第一个大写剩下的都是小写，否则不合法</li>
-</ul>
-<ul>
-<li><p>Example 1:</p>
-<pre><code>Input: &quot;USA&quot;
-Output: True
-</code></pre></li>
-<li><p>Example 2:</p>
-<pre><code>Input: &quot;FlaG&quot;        
-Output: False
-</code></pre><p>Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.<br>注意：输入将是由大写和小写拉丁字母组成的非空字符。</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">C++</div><div class="line"></div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    bool detectCapitalUse(string word) &#123;</div><div class="line">        int length = word.length();</div><div class="line">        if (length == 1)</div><div class="line">            return true;</div><div class="line">        if (word[0]&gt; &apos;Z&apos;)//首字母小写 后面有大写就不符合规则</div><div class="line">        &#123;</div><div class="line">            for (int i=1;i&lt;length;i++)//遍历除首字母外剩下字母</div><div class="line">            &#123;</div><div class="line">              if (word[i]&lt;=&apos;Z&apos;)//遇到大写就返回false</div><div class="line">              &#123;</div><div class="line">                return false;</div><div class="line">              &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        else</div><div class="line">        &#123;</div><div class="line">            if(word[1]&lt;=&apos;Z&apos;)//首字母大写 第二个字母也大写</div><div class="line">            &#123;</div><div class="line">                for (int i=2;i&lt;length;i++)//从第三个字母遍历</div><div class="line">                &#123;</div><div class="line">                  if (word[i]&gt;&apos;Z&apos;)//遇到小写就返回false</div><div class="line">                  &#123;</div><div class="line">                    return false;</div><div class="line">                  &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            else //首字母大写 第二个字母小写</div><div class="line">            &#123;</div><div class="line">                for (int i=2;i&lt;length;i++)//从第三个字母遍历</div><div class="line">                &#123;</div><div class="line">                  if (word[i]&lt;=&apos;Z&apos;)//遇到大写就返回false</div><div class="line">                  &#123;</div><div class="line">                    return false;</div><div class="line">                  &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        return true;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>注意：</p>
-<ul>
-<li>按照规定写算法不容易，不如换个思路。判断哪种情况不符合规定</li>
-<li>总共三种情况：</li>
-<li>1.首字母小写，后面只要有大写字母就是错误的；</li>
-<li>2.首字母大写，第二个字母大写，后面只要有小写字母就是错误的；</li>
-<li><p>3.首字母大写，第二个字母小写，后面只要有大写字母就是错误的；</p>
-<p><strong>第一种和第三种情况可以合并考虑，以下示例</strong></p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">C++</div><div class="line"></div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    bool detectCapitalUse(string word) &#123;</div><div class="line">        if (word.length() &lt;= 1) return true;</div><div class="line">        if (islower(word[0])||(isupper(word[0])&amp;&amp;islower(word[1]))) </div><div class="line">        //首字母小写 或者  (首字母大写和第二个字母小写)</div><div class="line">        &#123;</div><div class="line">            for (int i = 1; i &lt; word.length(); i++)</div><div class="line">            //后面只要有大写字母就是错误的</div><div class="line">            &#123;</div><div class="line">	            if (isupper(word[i]))</div><div class="line">					return false;</div><div class="line">			 &#125;</div><div class="line">        &#125; </div><div class="line">        else //首字母大写和第二个字母大写</div><div class="line">        &#123;</div><div class="line">            for (int i = 1; i &lt; word.length(); i++)</div><div class="line">            //后面只要有小写字母就是错误的</div><div class="line">            &#123;</div><div class="line">	            if (islower(word[i])) </div><div class="line">	                return false;</div><div class="line">	        &#125;           </div><div class="line">        &#125;</div><div class="line">        return true;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>注意：</p>
-<ul>
-<li>islower(C) 函数判断字符C是否是小写英文字母</li>
-<li>isupper(C) 函数判断字符C是否是大写英文字母</li>
-</ul>
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/[LeetCode]520. Detect Capital(检测单词是否合法)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-[LeetCode]292. Nim Game(轮流拿掉石头)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/[LeetCode]292. Nim Game(轮流拿掉石头)/">LeetCode 292. Nim Game</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/[LeetCode]292. Nim Game(轮流拿掉石头)/" class="archive-article-date">
-  	<time datetime="2017-08-13T16:18:57.709Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.<br>Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.<br>For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.<br>谷歌翻译：你和你的朋友一起玩下面的Nim游戏：在桌子上有一堆石头，每次你轮流去除1到3块石头。 去除最后一块石头的人将是赢家。 你会采取第一个回合去除石头。<br>你们都很聪明，并且有最好的策略。 编写一个函数来确定是否可以赢得游戏给定的堆数量的石头。<br>例如，如果在堆中有4块石头，那么你永远不会赢得比赛：无论你删除1，2，或3块石头，最后的石头将永远被你的朋友删除。</p>
-<p>Hint:</p>
-<ol>
-<li>If there are 5 stones in the heap, could you figure out a way to remove the stones such that you will always be the winner?<br>如果堆中有5块石头，你能找出一种方法去除石头，让你永远是赢家吗？</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">C++</div><div class="line"></div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    bool canWinNim(int n) &#123;</div><div class="line">        if(n%4 == 0 &amp;&amp; n)</div><div class="line">            return false;</div><div class="line">        return true;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>注意：</p>
-<ul>
-<li>很明显，n大于0时，自己拿过后给另一个人留4的倍数的石头，你就一定会赢。多注意观察规律就好</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/[LeetCode]292. Nim Game(轮流拿掉石头)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-[LeetCode]485. Max Consecutive Ones(最大连续为1的数量)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/[LeetCode]485. Max Consecutive Ones(最大连续为1的数量)/">LeetCode 485. Max Consecutive Ones</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/[LeetCode]485. Max Consecutive Ones(最大连续为1的数量)/" class="archive-article-date">
-  	<time datetime="2017-08-13T16:18:41.005Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Given a binary array, find the maximum number of consecutive 1s in this array.<br>题目大意：给一个二进制数组，找到连续为1的最大数量</p>
-<ul>
-<li><p>Example 1:</p>
-<pre><code>Input: [1,1,0,1,1,1]
-Output: 3
-Explanation: The first two digits or the last three digits are consecutive 1s.
-    The maximum number of consecutive 1s is 3.
-</code></pre></li>
-<li><p>Note:</p>
-<pre><code>The input array will only contain 0 and 1.
-The length of input array is a positive integer and will not exceed 10,000
-</code></pre><p>代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">C++</div><div class="line"></div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    int findMaxConsecutiveOnes(vector&lt;int&gt;&amp; nums) &#123;</div><div class="line">        int Max = 0;//定义连续1的最大个数</div><div class="line">        int Min = 0;//暂时存储连续1的个数</div><div class="line">        int length = nums.size();</div><div class="line">        for(int i=0;i&lt;length;i++)</div><div class="line">        &#123;</div><div class="line">            if(!nums[i])//元素为0</div><div class="line">            &#123;</div><div class="line">                if(Min &gt; Max)</div><div class="line">                //暂时存储连续1的个数比之前的大，重新给Max赋值</div><div class="line">                    Max = Min;</div><div class="line">                Min = 0;//重置Min</div><div class="line">                continue;</div><div class="line">            &#125;</div><div class="line">            if(nums[i])//元素为1</div><div class="line">                Min++; </div><div class="line">        &#125;</div><div class="line">        if(Min &gt; Max)</div><div class="line">            Max = Min;</div><div class="line">        return Max;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<hr>
-<p>下面贴出优化之前的代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    int findMaxConsecutiveOnes(vector&lt;int&gt;&amp; nums) &#123;</div><div class="line">        int Max = 0;//定义连续1的最大个数</div><div class="line">        int Min = 0;//暂时存储连续1的个数</div><div class="line">        int length = nums.size();//数组长度</div><div class="line">        /*if (length == 1)//单元素数组</div><div class="line">        &#123;</div><div class="line">            if(nums[0])//元素为1</div><div class="line">            &#123;</div><div class="line">                Max = 1;</div><div class="line">                return Max;</div><div class="line">            &#125;</div><div class="line">            else</div><div class="line">            &#123;</div><div class="line">                Max = 0;</div><div class="line">                return Max;</div><div class="line">            &#125;</div><div class="line">        &#125;*/</div><div class="line">        for(int i=0;i&lt;length;i++)</div><div class="line">        &#123;</div><div class="line">            if(!nums[i])//元素为0</div><div class="line">            &#123;</div><div class="line">                if(Min &gt; Max)</div><div class="line">                //暂时存储连续1的个数比之前的大，重新给Max赋值并重置Min</div><div class="line">                &#123;</div><div class="line">                    Max = Min;</div><div class="line">                    Min = 0;//重置Min</div><div class="line">                    continue;</div><div class="line">                &#125;</div><div class="line">                Min = 0;//重置Min</div><div class="line">            &#125;</div><div class="line">            if(nums[i])//元素为1</div><div class="line">            &#123;</div><div class="line">                Min++;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        if(Min &gt; Max)</div><div class="line">            Max = Min;</div><div class="line">        return Max;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>碰到的问题：</p>
-<ol>
-<li>7-19行代码用 38，39行完全可以代替。</li>
-<li>第7行刚开始写成if (length)，输出不是1就是0。最后才想起来length不为0均可执行花括号的内容，而非if(length == 1)</li>
-<li>28,29行 31行重复执行了，优化后如第一个代码（if花括号的位置也很关键）</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/[LeetCode]485. Max Consecutive Ones(最大连续为1的数量)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-[LeetCode]463. Island Perimeter(岛周长)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/[LeetCode]463. Island Perimeter(岛周长)/">LeetCode 463. Island Perimeter</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/[LeetCode]463. Island Perimeter(岛周长)/" class="archive-article-date">
-  	<time datetime="2017-08-13T16:18:25.165Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>You are given a map in form of a two-dimensional integer grid where 1 represents land and 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn’t have “lakes” (water inside that isn’t connected to the water around the island). One cell is a square with side length 1. The grid is rectangular, width and height don’t exceed 100. Determine the perimeter of the island.<br>题目大意:（Google翻译）<br>您将获得一个二维整数网格形式的地图，其中1表示土地，0表示水。 网格单元水平/垂直（不是对角线）连接。 网格完全被水包围，并且恰好有一个岛（即，一个或多个连接的陆地单元）。 岛上没有“湖泊”（里面的水是不连接到岛周围的水）。 一个单元格是边长为1的正方形。网格是矩形，宽度和高度不超过100.确定岛的周长。</p>
-<ul>
-<li><p>Example:</p>
-<pre><code>[[0,1,0,0],
- [1,1,1,0],
- [0,1,0,0],
- [1,1,0,0]]
-
-Answer: 16
-Explanation: The perimeter is the 16 yellow stripes in the image 
-</code></pre><p><img src="https://leetcode.com/static/images/problemset/island.png" alt="463. Island Perimeter图片"><br>代码如下：</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">C++</div><div class="line"></div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    int islandPerimeter(vector&lt;vector&lt;int&gt;&gt;&amp; grid) &#123;</div><div class="line">        int Vertical_length = grid.size();//垂直长度 行数</div><div class="line">        int Horizontal_length = grid[0].size();//水平长度 列数</div><div class="line">        int island = 0;//正方形个数</div><div class="line">        int repeat = 0;//两个正方形间重复的边数</div><div class="line">        int perimeter = 0;//总边长</div><div class="line">        for(int i=0;i&lt;Vertical_length;i++)</div><div class="line">        &#123;</div><div class="line">            for(int j=0;j&lt;Horizontal_length;j++)</div><div class="line">            &#123;</div><div class="line">                if(!grid[i][j])//元素为0 跳出循环</div><div class="line">                    continue;</div><div class="line">                island++;//计算正方形个数</div><div class="line">                if(i!=0 &amp;&amp; grid[i-1][j])</div><div class="line">                //非第一行元素 &amp;&amp; grid[i-1][j]和grid[i][j]均为1</div><div class="line">                    repeat++;//重复的边数+1</div><div class="line">                if(j!=0 &amp;&amp; grid[i][j-1])</div><div class="line">                //非第一列元素 &amp;&amp; grid[i][j-1]和grid[i][j]均为1</div><div class="line">                    repeat++;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        perimeter = 4 * island - 2 * repeat;//计算总边长</div><div class="line">        return perimeter;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>注意：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">if(i!=0 &amp;&amp; grid[i-1][j])</div><div class="line">//非第一行元素 &amp;&amp; grid[i-1][j]和grid[i][j]均为1</div><div class="line">	repeat++;//重复的边数+1</div><div class="line">if(j!=0 &amp;&amp; grid[i][j-1])</div><div class="line">//非第一列元素 &amp;&amp; grid[i][j-1]和grid[i][j]均为1</div><div class="line">	repeat++;</div></pre></td></tr></table></figure></p>
-<p>行元素之间比较时，从第二个元素开始于之前元素比<br>列元素之间比较时，从第二个元素开始于之前元素比<br>i和j不要搞混，（我犯过这种错误）</p>
-<p>重复边是两条边的长度！！！！！算总周长时 repeat*2</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/[LeetCode]463. Island Perimeter(岛周长)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-[LeetCode]344. Reverse String(反转字符串)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/[LeetCode]344. Reverse String(反转字符串)/">LeetCode 344. Reverse String</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/[LeetCode]344. Reverse String(反转字符串)/" class="archive-article-date">
-  	<time datetime="2017-08-13T16:18:05.197Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Write a function that takes a string as input and returns the string reversed.<br>题目大意：反向输出字符串</p>
-<ul>
-<li><p>Example:</p>
-<pre><code>Given s = &quot;hello&quot;, return &quot;olleh&quot;.
-</code></pre></li>
-</ul>
-<p>代码如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">C++</div><div class="line"></div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    string reverseString(string s) &#123;</div><div class="line">        int a = s.size()-1;</div><div class="line">        string b = &quot;&quot;;</div><div class="line">        for(int i=a;i&gt;=0;i--)</div><div class="line">            b += s[i];</div><div class="line">        return b;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
-<p>注意：设置a是为了不用每次循环都执行s.size()-1</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/[LeetCode]344. Reverse String(反转字符串)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-[LeetCode]412. Fizz Buzz" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/[LeetCode]412. Fizz Buzz/">LeetCode 412. Fizz Buzz</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/[LeetCode]412. Fizz Buzz/" class="archive-article-date">
-  	<time datetime="2017-08-13T16:17:30.150Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Write a program that outputs the string representation of numbers from 1 to n.</p>
-<p>But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.</p>
-<p>题目大意： 输出一个从1到n的字符串数组<br>能被3整除的用“Fizz”代替数字，能被5整除的用“Buzz”代替数字，<br>能被3和5整除的用“FizzBuzz”代替数字，其余均用数字表示。</p>
-<ul>
-<li><p>列表内容</p>
-<pre><code>Example:
-
-n = 15,
-
-Return:
-[
-    &quot;1&quot;,
-    &quot;2&quot;,
-    &quot;Fizz&quot;,
-    &quot;4&quot;,
-    &quot;Buzz&quot;,
-    &quot;Fizz&quot;,
-    &quot;7&quot;,
-    &quot;8&quot;,
-    &quot;Fizz&quot;,
-    &quot;Buzz&quot;,
-    &quot;11&quot;,
-    &quot;Fizz&quot;,
-    &quot;13&quot;,
-    &quot;14&quot;,
-    &quot;FizzBuzz&quot;
-]
-</code></pre><p>代码如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">C++</div><div class="line"></div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    vector&lt;string&gt; fizzBuzz(int n) &#123;</div><div class="line">        vector&lt;string&gt; A;</div><div class="line">        for(int i=1;i&lt;=n;i++)</div><div class="line">        &#123;</div><div class="line">            if(i%15 == 0)</div><div class="line">                A.push_back(&quot;FizzBuzz&quot;);</div><div class="line">            else if(i%3 == 0)</div><div class="line">                A.push_back(&quot;Fizz&quot;);</div><div class="line">            else if(i%5 == 0)</div><div class="line">                A.push_back(&quot;Buzz&quot;);</div><div class="line">            else</div><div class="line">                A.push_back(to_string(i));</div><div class="line">        &#125;</div><div class="line">        return A;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>该题目读懂题意就能做。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/[LeetCode]412. Fizz Buzz/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-[LeetCode]496. Next Greater Element I(下一个更大的元素 1)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/[LeetCode]496. Next Greater Element I(下一个更大的元素 1)/">LeetCode 496. Next Greater Element I</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/[LeetCode]496. Next Greater Element I(下一个更大的元素 1)/" class="archive-article-date">
-  	<time datetime="2017-08-13T16:17:19.253Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements are subset of nums2. Find all the next greater numbers for nums1’s elements in the corresponding places of nums2.<br> The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not exist, output -1 for this number.<br>题目大意：<br>给出两个数组nums1 和 nums2，其中nums1 是 nums2 的子集。找出nums1的每个元素对应的The Next Greater Number.<br>nums1 中 x 的The Next Greater Number是指nums2中相对应数右边第一个比它大的元素，如果没有则返回-1。</p>
-<p> 举例1. Example 1:</p>
-<pre><code>Input: nums1 = [4,1,2], nums2 = [1,3,4,2].
-Output: [-1,3,-1]
-Explanation:
-</code></pre><ul>
-<li><p>For number 4 in the first array, you cannot find the next greater<br>number for it in the second array, so output -1.</p>
-</li>
-<li><p>For number 1 in the first array, the next greater number for it in<br>the second array is 3.</p>
-</li>
-</ul>
-<ul>
-<li>For number 2 in the first array, there is no next greater number for<br>it in the second array, so output -1.</li>
-</ul>
-<p>举例2. Example 2:</p>
-<pre><code>Input: nums1 = [2,4], nums2 = [1,2,3,4].
-Output: [3,-1]
-Explanation:
-</code></pre><ul>
-<li>For number 2 in the first array, the next greater number for it in<br>the second array is 3.</li>
-</ul>
-<ul>
-<li>For number 4 in the first array, there is no next greater number for<br>it in the second array, so output -1.</li>
-</ul>
-<p>Note:<br>All elements in nums1 and nums2 are unique.（所有元素都不同）<br>The length of both nums1 and nums2 would not exceed 1000.（长度小于1000）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">C++</div><div class="line"></div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    vector&lt;int&gt; nextGreaterElement(vector&lt;int&gt;&amp; findNums, vector&lt;int&gt;&amp; nums) &#123;</div><div class="line">        vector&lt;int&gt; A;</div><div class="line">        for(int findNum : findNums)</div><div class="line">        &#123;</div><div class="line">            bool B = false;</div><div class="line">            for(int i=0;i&lt;nums.size();i++)</div><div class="line">            &#123;</div><div class="line">                if(findNum == nums[i])</div><div class="line">                    B=true;</div><div class="line">                if(B &amp;&amp; findNum &lt; nums[i])</div><div class="line">                &#123;</div><div class="line">                    A.push_back(nums[i]);</div><div class="line">                    B=false;</div><div class="line">                    break;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            if(B)</div><div class="line">                A.push_back(-1);</div><div class="line">        &#125;</div><div class="line">        return A;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>这个算法简单，很容易想到，不做过多描述。网上查到几个更好的算法，附上链接<a href="http://blog.csdn.net/c602273091/article/details/54935239" target="_blank" rel="external">http://blog.csdn.net/c602273091/article/details/54935239</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/[LeetCode]496. Next Greater Element I(下一个更大的元素 1)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-[LeetCode]500. Keyboard Row(输出在键盘一行上能敲出来的单词)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/[LeetCode]500. Keyboard Row(输出在键盘一行上能敲出来的单词)/">LeetCode 500. Keyboard Row</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/[LeetCode]500. Keyboard Row(输出在键盘一行上能敲出来的单词)/" class="archive-article-date">
-  	<time datetime="2017-08-13T16:16:53.495Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Given a List of words, return the words that can be typed using letters of alphabet on only one row’s of American keyboard like the image below.<br>给定一个单词列表，返回可以只在美国键盘的一行上输入的单词（使用字母表中的字母），如下图所示。</p>
-<p>举例Example 1:<br>Input: [“Hello”, “Alaska”, “Dad”, “Peace”]<br>Output: [“Alaska”, “Dad”]<br>Note:</p>
-<ol>
-<li><p>You may use one character in the keyboard more than once.（你可以在键盘中多次使用一个字符。）</p>
-</li>
-<li><p>You may assume the input string will only contain letters of<br>alphabet.（你可以假定输入字符串只包含字母<br> 字母）</p>
-</li>
-</ol>
-<p><img src="https://leetcode.com/static/images/problemset/keyboard.png" alt="这里写图片描述"></p>
-<p>自己考虑得太复杂了，只好百度了一下，希望还能有更好的解法<br>参考<a href="http://www.cnblogs.com/grandyang/p/6421749.html，表示感谢" target="_blank" rel="external">http://www.cnblogs.com/grandyang/p/6421749.html，表示感谢</a></p>
-<hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    vector&lt;string&gt; findWords(vector&lt;string&gt;&amp; words) &#123;</div><div class="line">        vector&lt;string&gt; res;</div><div class="line">            unordered_set&lt;char&gt; row1&#123;&apos;q&apos;,&apos;w&apos;,&apos;e&apos;,&apos;r&apos;,&apos;t&apos;,&apos;y&apos;,&apos;u&apos;,&apos;i&apos;,&apos;o&apos;,&apos;p&apos;&#125;;</div><div class="line">            unordered_set&lt;char&gt; row2&#123;&apos;a&apos;,&apos;s&apos;,&apos;d&apos;,&apos;f&apos;,&apos;g&apos;,&apos;h&apos;,&apos;j&apos;,&apos;k&apos;,&apos;l&apos;&#125;;</div><div class="line">            unordered_set&lt;char&gt; row3&#123;&apos;z&apos;,&apos;x&apos;,&apos;c&apos;,&apos;v&apos;,&apos;b&apos;,&apos;n&apos;,&apos;m&apos;&#125;;</div><div class="line">            for (string word : words) &#123;</div><div class="line">                int one = 0, two = 0, three = 0;</div><div class="line">                string s = word;</div><div class="line">                int index=0;</div><div class="line">                while(s[index]!=&apos;\0&apos;) &#123;</div><div class="line">                    if (s[index] &lt; &apos;a&apos;) s[index] += 32;</div><div class="line">                    if (row1.count(s[index])) one = 1;</div><div class="line">                    if (row2.count(s[index])) two = 1;</div><div class="line">                    if (row3.count(s[index])) three = 1;</div><div class="line">                    if (one + two + three &gt; 1) break;</div><div class="line">                    cout &lt;&lt; s[index++];</div><div class="line">                &#125;</div><div class="line">                if (one + two + three == 1) res.push_back(word);</div><div class="line">            &#125;</div><div class="line">            return res;</div><div class="line">        &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<hr>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/[LeetCode]500. Keyboard Row(输出在键盘一行上能敲出来的单词)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-[LeetCode]476. Number Complement(数字补码)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/[LeetCode]476. Number Complement(数字补码)/">LeetCode 476. Number Complement</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/[LeetCode]476. Number Complement(数字补码)/" class="archive-article-date">
-  	<time datetime="2017-08-13T16:16:38.879Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>题目描述：</strong><br>Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.<br>给定一个正整数，输出其补数。 补码策略是翻转其二进制表示的位。</p>
-<p><strong>Note:</strong>（数据范围）<br>The given integer is guaranteed to fit within the range of a 32-bit signed integer.<br>You could assume no leading zero bit in the integer’s binary representation.</p>
-<p><strong>Example 1:</strong></p>
-<pre><code>Input: 5
-Output: 2
-Explanation: The binary representation of 5 is 101 (no leading zero bits), and its complement is 010. So you need to output 2.
-</code></pre><p><strong>Example 2:</strong></p>
-<pre><code>Input: 1
-Output: 0
-Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
-</code></pre><p><strong>代码如下：(C++)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    int findComplement(int num) &#123;</div><div class="line">        int y = 0;</div><div class="line">        if(num == 0)</div><div class="line">            return 1;</div><div class="line">        int c = 1;</div><div class="line">        while(num != 0)</div><div class="line">        &#123;</div><div class="line">            int a = num%2;</div><div class="line">            int b = a&gt;0?0:1;</div><div class="line">            y += b*c;</div><div class="line">            c *=2;</div><div class="line">            num = num / 2;</div><div class="line">        &#125;</div><div class="line">        return y;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
-<p>遇到的问题：<br>1.智障的我把第5行if条件写成了单等号，调试很久都是错误的，显示不出正确结果，该打。<br>2.二进制转换为十进制用 y=a0<em> 2^0 +a1</em> 2^1 +a2<em> 2^2 +a3</em> 2^3 +a4* 2^4 + … (此时2^0表示2的0次方)<br>2的n次方在代码中用c来表示，b用三元运算符直接翻转其二进制表示的位.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/[LeetCode]476. Number Complement(数字补码)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/archives/2017/">&laquo; Prev</a><a class="page-number" href="/archives/2017/">1</a><span class="page-number current">2</span>
     </nav>
   
 
@@ -993,9 +252,9 @@ Explanation: The binary representation of 1 is 1 (no leading zero bits), and its
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
