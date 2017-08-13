@@ -159,6 +159,65 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-[LeetCode]461. Hamming Distance(汉明距离)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#LeetCode 461. Hamming Distance</p>
+<p>题目描述：The Hamming distance between two integers is the number of positions at which the corresponding bits are different.<br>Given two integers x and y, calculate the Hamming distance.</p>
+<p>Note:（数据范围）<br>0 ≤ x, y &lt; 2的31次方.</p>
+<p>示例：<br>Input: x = 1, y = 4</p>
+<p>Output: 2</p>
+<p>Explanation:<br>1   (0 0 0 1)<br>4   (0 1 0 0)<br>       ↑   ↑</p>
+<p>The above arrows point to positions where the corresponding bits are different.</p>
+<p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    int hammingDistance(int x, int y) &#123;</div><div class="line">        int a[31],b[31];</div><div class="line">        int c=0;</div><div class="line">        for(int i=0;i&lt;31;i++)</div><div class="line">        &#123;</div><div class="line">            if(x%2!=0)</div><div class="line">            &#123;</div><div class="line">                a[i]=1;</div><div class="line">                x=x/2;</div><div class="line">            &#125;</div><div class="line">            else</div><div class="line">            &#123;</div><div class="line">                a[i]=0;</div><div class="line">                x=x/2;</div><div class="line">            &#125;</div><div class="line">            if(y%2!=0)</div><div class="line">            &#123;</div><div class="line">                b[i]=1;</div><div class="line">                y=y/2;</div><div class="line">            &#125;</div><div class="line">            else</div><div class="line">            &#123;</div><div class="line">                b[i]=0;</div><div class="line">                y=y/2;</div><div class="line">            &#125;</div><div class="line">            if(a[i]!=b[i])</div><div class="line">                c++;</div><div class="line">        &#125;</div><div class="line">        return c;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<ul>
+<li><strong>汉明距离（Hamming Distance）</strong></li>
+<li>汉明距离是以理查德·卫斯里·汉明的名字命名的。在信息论中，两个等长字符串之间的汉明距离是两个字符串对应位置的不同字符的个数。换句话说，它就是将一个字符串变换成另外一个字符串所需要替换的字符个数。例如：<br>1011101 与 1001001 之间的汉明距离是 2。<br>2143896 与 2233796 之间的汉明距离是 3。<br>“toned” 与 “roses” 之间的汉明距离是 3。<br>摘选自百度百科</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/13/[LeetCode]461. Hamming Distance(汉明距离)/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -402,7 +461,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只记录了一些我的学习经历&lt;br&gt;同时感谢马老师强大的美工支持！</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">ZZU在校软件工程学生一枚&lt;br&gt;&lt;br&gt;只记录了一些我的学习经历&lt;br&gt;分享给大家祈求共同进步！</div>
   	  	
     	</section>
     

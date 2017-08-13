@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/8 | WHL Blog -王海龙的个人博客</title>
+  <title>WHL Blog -王海龙的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="郑州大学15级计算机系本科生">
-<meta property="og:type" content="website">
+  <meta name="description" content="#LeetCode 461. Hamming Distance 题目描述：The Hamming distance between two integers is the number of positions at which the corresponding bits are different.Given two integers x and y, calculate the Hammin">
+<meta property="og:type" content="article">
 <meta property="og:title" content="WHL Blog -王海龙的个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/08/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/08/13/[LeetCode]461. Hamming Distance(汉明距离)/index.html">
 <meta property="og:site_name" content="WHL Blog -王海龙的个人博客">
-<meta property="og:description" content="郑州大学15级计算机系本科生">
+<meta property="og:description" content="#LeetCode 461. Hamming Distance 题目描述：The Hamming distance between two integers is the number of positions at which the corresponding bits are different.Given two integers x and y, calculate the Hammin">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-08-13T15:51:51.940Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WHL Blog -王海龙的个人博客">
-<meta name="twitter:description" content="郑州大学15级计算机系本科生">
+<meta name="twitter:description" content="#LeetCode 461. Hamming Distance 题目描述：The Hamming distance between two integers is the number of positions at which the corresponding bits are different.Given two integers x and y, calculate the Hammin">
   
     <link rel="alternative" href="/atom.xml" title="WHL Blog -王海龙的个人博客" type="application/atom+xml">
   
@@ -157,70 +158,160 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-[LeetCode]461. Hamming Distance(汉明距离)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#LeetCode 461. Hamming Distance</p>
+<p>题目描述：The Hamming distance between two integers is the number of positions at which the corresponding bits are different.<br>Given two integers x and y, calculate the Hamming distance.</p>
+<p>Note:（数据范围）<br>0 ≤ x, y &lt; 2的31次方.</p>
+<p>示例：<br>Input: x = 1, y = 4</p>
+<p>Output: 2</p>
+<p>Explanation:<br>1   (0 0 0 1)<br>4   (0 1 0 0)<br>       ↑   ↑</p>
+<p>The above arrows point to positions where the corresponding bits are different.</p>
+<p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    int hammingDistance(int x, int y) &#123;</div><div class="line">        int a[31],b[31];</div><div class="line">        int c=0;</div><div class="line">        for(int i=0;i&lt;31;i++)</div><div class="line">        &#123;</div><div class="line">            if(x%2!=0)</div><div class="line">            &#123;</div><div class="line">                a[i]=1;</div><div class="line">                x=x/2;</div><div class="line">            &#125;</div><div class="line">            else</div><div class="line">            &#123;</div><div class="line">                a[i]=0;</div><div class="line">                x=x/2;</div><div class="line">            &#125;</div><div class="line">            if(y%2!=0)</div><div class="line">            &#123;</div><div class="line">                b[i]=1;</div><div class="line">                y=y/2;</div><div class="line">            &#125;</div><div class="line">            else</div><div class="line">            &#123;</div><div class="line">                b[i]=0;</div><div class="line">                y=y/2;</div><div class="line">            &#125;</div><div class="line">            if(a[i]!=b[i])</div><div class="line">                c++;</div><div class="line">        &#125;</div><div class="line">        return c;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<ul>
+<li><strong>汉明距离（Hamming Distance）</strong></li>
+<li>汉明距离是以理查德·卫斯里·汉明的名字命名的。在信息论中，两个等长字符串之间的汉明距离是两个字符串对应位置的不同字符的个数。换句话说，它就是将一个字符串变换成另外一个字符串所需要替换的字符个数。例如：<br>1011101 与 1001001 之间的汉明距离是 2。<br>2143896 与 2233796 之间的汉明距离是 3。<br>“toned” 与 “roses” 之间的汉明距离是 3。<br>摘选自百度百科</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="img\zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="img\weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/13/[LeetCode]461. Hamming Distance(汉明距离)/" class="archive-article-date">
-  	<time datetime="2017-08-13T15:52:17.926Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/13/[LeetCode]461. Hamming Distance(汉明距离)/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/13/hello-world/" class="archive-article-date">
-  	<time datetime="2017-08-13T02:30:36.265Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/13/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -243,8 +334,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
