@@ -1,0 +1,67 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>Hello, World</title>  
+<style type="text/css">  
+html{height:100%}  
+body{height:100%;margin:0px;padding:0px}  
+#container{height:100%}  
+</style>  
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Lkt3gBfoZTqTwo9a3oaD9R00IlpUbAi7">
+//v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=Lkt3gBfoZTqTwo9a3oaD9R00IlpUbAi7"
+//v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=Lkt3gBfoZTqTwo9a3oaD9R00IlpUbAi7&callback=initialize"
+</script>
+</head>  
+ 
+<body>  
+<div id="container"></div> 
+<script type="text/javascript"> 
+var map = new BMap.Map("container");          // 创建地图实例
+//var point = new BMap.Point(121.487899486,31.24916171);  // 创建点坐标 
+var point = new BMap.Point(116.404, 39.915);  // 创建点坐标  
+map.centerAndZoom(point, 5);                 // 初始化地图，设置中心点坐标和地图级别  
+//window.setTimeout(function(){  
+//   map.panTo(new BMap.Point(116.409, 39.918));    
+//}, 2000); 
+//添加控件 一个平移缩放控件、一个比例尺控件和一个缩略图控件    
+map.addControl(new BMap.NavigationControl());
+map.addControl(new BMap.NavigationControl());    
+map.addControl(new BMap.ScaleControl());    
+map.addControl(new BMap.OverviewMapControl());    
+map.addControl(new BMap.MapTypeControl());    
+map.setCurrentCity("北京"); // 仅当设置城市信息时，MapTypeControl的切换功能才能可用
+
+var point1 = new BMap.Point(121.487899486,31.24916171);
+var marker1 = new BMap.Marker(point1);        // 创建标注    
+map.addOverlay(marker1);                     // 将标注添加到地图中
+var opts = {    
+ width : 300,     // 信息窗口宽度    
+ height: 150,     // 信息窗口高度    
+ title : "Hello上海"  // 信息窗口标题   
+}    
+   
+marker1.addEventListener("click", function(){    
+ alert("您点击了标注上海");   
+ var infoWindow = new BMap.InfoWindow("World", opts);  // 创建信息窗口对象  
+ map.openInfoWindow(infoWindow, point1);      // 打开信息窗口
+});
+
+var point2 = new BMap.Point(114.183870524,22.2721034276);
+var marker2 = new BMap.Marker(point2);        // 创建标注    
+map.addOverlay(marker2);                     // 将标注添加到地图中
+var opts1 = {    
+ width : 300,     // 信息窗口宽度    
+ height: 150,     // 信息窗口高度    
+ title : "Hello香港"  // 信息窗口标题   
+}    
+   
+marker2.addEventListener("click", function(){    
+ alert("您点击了标注香港");   
+ var infoWindow = new BMap.InfoWindow("World", opts1);  // 创建信息窗口对象  
+ map.openInfoWindow(infoWindow, point2);      // 打开信息窗口
+});
+</script>  
+</body>  
+</html>

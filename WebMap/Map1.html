@@ -1,0 +1,156 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/logo.png"><!-- 页面顶部logo -->
+<title>花盆数据在线监测分析平台</title>
+<link rel="stylesheet" type="text/css" href="css-middle.css" />
+<style type="text/css">  
+html{height:100%}  
+body{width="100%"height:100%;margin:0px;padding:10px}  
+#container{height:100%}  
+</style> 
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Lkt3gBfoZTqTwo9a3oaD9R00IlpUbAi7">
+//v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=Lkt3gBfoZTqTwo9a3oaD9R00IlpUbAi7"
+//v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=Lkt3gBfoZTqTwo9a3oaD9R00IlpUbAi7&callback=initialize"
+</script> 
+</head>
+<body class="easyui-layout" style="overflow-y: hidden" scroll="no" >
+	<!-- TOP-->
+	<div region="north" border="false"
+		style="background-image: url('images/TopImage.png'); background-repeat: repeat-x; height: 82px; padding: 1px; overflow: hidden;">
+	</div>
+	<!-- middle-->
+	<div id="mainPanle" region="center" style="overflow:hidden;">
+		<!-- middle left -->
+		<div id="main-left">
+			<table>
+				<class="foot" align="right" valign="middle">
+				<tr>
+					<td><a href="###">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp全国分布</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp监测曲线</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp实时监控</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp全球分布</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp城市比较</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp时段统计</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp天气关联</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp经济关联</a></td>
+				</tr>
+			</table>
+		</div>
+		<!-- middle mid -->
+		<div id="main-content">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp监测时间点
+		<br/>
+		<table>
+				<class="foot" align="right" valign="middle">
+				<tr>
+					<td><a href="###">2017-10-23 00:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 01:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 02:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 03:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 04:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 05:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 06:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 07:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 08:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 09:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 10:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 11:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 12:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 13:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 14:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 15:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 16:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 17:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 18:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 19:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 20:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 21:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 22:00:00</a></td>
+				</tr>
+				<tr>
+					<td><a href="###">2017-10-23 23:00:00</a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<!-- middle right -->
+		<div id="main-right">
+			<div id="container"></div> 
+			<script type="text/javascript" src="BMap.js?container=container"></script>
+		</div>
+	</div>
+
+	<!-- bottom -->
+	<div region="south" border="false" style="height: 20px; overflow: hidden;line-height:20px;">
+	    <table width="100%" style="margin-top:-4px;">
+           <tr>
+                <td valign="middle" style="color:#666">
+				   版权所有 &copy; 2017-2017 <a href="##" style="color:#333">掌上农场项目组</a> 技术支持: <a href="###" target="_blank" style="color:#333">王海龙</a>
+			    </td>
+           </tr>
+	    </table>
+	</div>
+	<!-- <script type="text/javascript" src="js/tab.js?v=2.20"></script> 
+	<script type="text/javascript"></script> -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+#mainPanle{width:100%;}
+#main-left{
+	width:12%;
+	height:620px;
+	padding-top:20px;
+	float:left;
+	border:1px solid #f7f7f7;
+}
+#main-content{
+	width:15%;
+	height:620px;
+	padding-top:10px;
+	float:left;
+	border:1px solid #f7f7f7;
+	position:absolute;
+	top:95px;
+	left:180px;
+}
+#main-right{
+	width:73%;
+	height:620px;
+	float:right;
+	border:1px solid #f7f7f7;
+	padding-top:20px;
+}
